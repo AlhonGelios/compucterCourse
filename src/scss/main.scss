@@ -1,0 +1,8 @@
+@import "./mixins/font-face";
+@import "fonts";
+
+*{
+    background-color: red;
+    font-family: 'Roboto';
+    font-style: italic;
+}
