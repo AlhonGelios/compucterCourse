@@ -1,8 +1,23 @@
 @import "./mixins/font-face";
 @import "fonts";
+@import "button";
+@import "title";
+@import "promo";
+@import "header";
+
 
 *{
-    background-color: red;
     font-family: 'Roboto';
-    font-style: italic;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }

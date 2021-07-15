@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 80px 0px 80px;
+    height: 45px;
+    box-sizing: content-box;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 80px;
+
+    &__link {
+        margin-right: 56px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    :last-child {
+        margin-right: 0;
+    }
+}
