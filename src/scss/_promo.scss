@@ -1,8 +1,116 @@
 .promo {
     background: url("../img/main-screen__bgc.jpg") center center/cover no-repeat;
     height: 100vh;
+    position: relative;
 
     .title {
         margin-top: 188px;
     }
+
+    .timer {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            padding: 20px 30px;
+            width: 102px;
+            height: 112px;
+            background: #121212;
+        }
+
+        &__item-number {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        &__item-desc {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+    }
+
+    &__statistic {
+        height: 130px;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        background-color: #121212;
+    }
+
+    &__statistic-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__statistic-learners {
+        display: grid;
+        width: 251px;
+        row-gap: 10px;
+        column-gap: 30px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin: 0 81px;
+    }
+
+    &__statistic-desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+
+    &__statistic-count {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+
+    &__statistic-learners-earn {
+        display: grid;
+        width: 280px;
+        column-gap: 30px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+
+    &__statistic-line {
+        display: grid;
+        width: 714px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-between;
+    }
+
+    &__statistic-line-countnull {
+        height: 6px;
+        width: 100%;
+        background-color: #FFFFFF;
+        grid-column: 1/3;
+        margin: 8px 0 5px 0;
+    }
+
+    &__statistic-line-count {
+        height: 100%;
+        width: 65%;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+        grid-column: 1/3;
+    }
+
 }
