@@ -4,6 +4,7 @@
 @import "title";
 @import "promo";
 @import "header";
+@import "info";
 
 
 *{
@@ -20,4 +21,8 @@
 
 a {
     text-decoration: none;
+}
+
+.wrapper-bg {
+    background: url('../img/bgc.png') center / cover no-repeat;
 }
